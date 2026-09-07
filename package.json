@@ -1,0 +1,14 @@
+{
+  "name": "kisan-direct",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kisan Direct — farm-to-consumer marketplace (SIH26033)",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
